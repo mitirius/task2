@@ -1,0 +1,12 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    --primary-color: #2861C9;
+    --text-color: #020917;
+    --secondary-color: #ccc;
+    --tab-bcg-color: #fff;
+}
+
+* , ::before, ::after {
+    box-sizing: inherit;
+}

@@ -1,0 +1,30 @@
+.tab {
+    background-color: var(--primary-color);
+    height: 10vh;
+    display: flex;
+    align-items: flex-end;
+}
+.btns {
+    margin-left: .5em;
+}
+
+.nav-btn {
+    padding: .8rem 1rem;
+    background-color: #A8C4F7;
+    border: 1px solid var(--primary-color);
+    color: var(--tab-bcg-color);
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+    color: var(--text-color);
+    background-color: var(--tab-bcg-color);
+    border-bottom: none;
+}
+
+.nav-btn--active {
+    color: var(--text-color);
+    background-color: var(--tab-bcg-color);
+    border-bottom: none;
+}
