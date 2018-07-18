@@ -23,15 +23,15 @@ export default class Tab extends React.PureComponent<Props, State> {
 
     render() {
         return (
-            <div>
+            <>
                 <div className="tab">
-                    <div className="btns">
-                        <button className={this.state.activeIndex === 0 ? "nav-btn nav-btn--active" : "nav-btn"} onClick={this._onClick.bind(this, 0)}>Aktuelles</button>
-                        <button className={this.state.activeIndex === 1 ? "nav-btn nav-btn--active" : "nav-btn"} onClick={this._onClick.bind(this, 1)}>Veranstaltungen</button>
+                    <div className="tab__btns">
+                        <button className={this.state.activeIndex === 0 ? "tab__nav-btn tab__nav-btn--active" : "tab__nav-btn"} onClick={this._onClick.bind(this, 0)}>Aktuelles</button>
+                        <button className={this.state.activeIndex === 1 ? "tab__nav-btn tab__nav-btn--active" : "tab__nav-btn"} onClick={this._onClick.bind(this, 1)}>Veranstaltungen</button>
                     </div>
                 </div>
                 {(this.state.activeIndex === 0) ? <ItemList items={this.props.items.filter(function (i, idx) { return idx <= 3; })} /> : <ItemList items={this.props.items.filter(function (i, idx) { return idx > 3; })} />}
-            </div >
+            </>
         );
     }
 }

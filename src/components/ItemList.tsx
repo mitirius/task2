@@ -14,9 +14,9 @@ export default function ItemList(props: Props) {
                 return (<Item key={item.imgUrl} title={item.title} imgUrl={item.imgUrl}
                     imgDate={item.imgDate} imgText={item.imgText} text={item.text} />);
             })}
-            <footer className="footer">
-                <span className="icon"><i className="fas fa-angle-right" />
-                    <a href="#" className="footer-link">Alle News in der Ubersicht</a></span>
+            <footer className="item-list__footer footer">
+                <span className="footer__icon"><i className="fas fa-angle-right" />
+                    <a href="#" className="footer__icon--link">Alle News in der Ubersicht</a></span>
             </footer>
         </ul>
     );

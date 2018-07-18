@@ -4,11 +4,11 @@
     display: flex;
     align-items: flex-end;
 }
-.btns {
+.tab__btns {
     margin-left: .5em;
 }
 
-.nav-btn {
+.tab__nav-btn {
     padding: .8rem 1rem;
     background-color: #A8C4F7;
     border: 1px solid var(--primary-color);
@@ -17,13 +17,13 @@
     cursor: pointer;
 }
 
-.nav-btn:hover {
+.tab__nav-btn:hover {
     color: var(--text-color);
     background-color: var(--tab-bcg-color);
     border-bottom: none;
 }
 
-.nav-btn--active {
+.tab__nav-btn--active {
     color: var(--text-color);
     background-color: var(--tab-bcg-color);
     border-bottom: none;
